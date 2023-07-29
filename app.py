@@ -8,7 +8,7 @@ st.set_page_config(page_icon="🦙💬", page_title=" LLamaChat")
 with st.sidebar:
     st.title("🦙💬 LlamaChat")
     if 'REPLICATE_API_TOKEN' in st.secrets:
-        st.sucesss('API key already provided!', icon='✅')
+        st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
         replicate_api = st.text_input("Enter Replicate API token: ", type='password')
@@ -43,7 +43,7 @@ def generate_llama2_response(prompt_input):
             string_dialogue += "Assistant: " + dict_message["content"] + "\\n\\n"
     output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5', 
                            input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                                  "temperature":0.1, "top_p":0.9, "max_length":512, "repetition_penalty":1})
+                                  "temperature":0.0, "top_p":0.9, "max_length":512, "repetition_penalty":1})
     return output
 
 # User-provided prompt 
