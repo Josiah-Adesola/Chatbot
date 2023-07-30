@@ -16,10 +16,10 @@ with st.sidebar:
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
             st.success('Proceed to entering your prompt messagge!', icon='👉')
-    st.markdown("How to get the Replicate API token for free!
-        1. Go to https://replicate.com/signin/.
-2. Sign in with your GitHub account.
-3. Proceed to the API tokens page and copy your API token.")
+    st.markdown("How to get the Replicate API token for free!")
+    st.markdown("1. Go to https://replicate.com/signin/")
+    st.markdown("2. Sign in with your GitHub account.")
+    st.markdown("3. Proceed to the API tokens page and copy your API token.")
     
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
