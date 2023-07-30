@@ -15,7 +15,7 @@ with st.sidebar:
         if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
-            st.success('Proceed to entering your prompt messagge!', icon='👉')
+            st.success('Proceed to entering your prompt message!', icon='👉')
             
     st.markdown("How to get the Replicate API token for free!")
     st.markdown("1. Go to https://replicate.com/signin/")
@@ -68,7 +68,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
             full_response = ''
             for item in response:
                 full_response += item
-               placeholder.markdown(full_response)
+                placeholder.markdown(full_response)
             placeholder.markdown(full_response)
             
         message = {"role": "assistant", "content": full_response}
