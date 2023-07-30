@@ -1,7 +1,7 @@
 import streamlit as st
 import replicate
 import os
-import sleep
+from time import sleep
 
 st.set_page_config(page_icon="🦙💬", page_title=" LLamaChat")
 
