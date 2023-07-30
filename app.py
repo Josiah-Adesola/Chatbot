@@ -22,7 +22,7 @@ with st.sidebar:
     st.markdown("2. Sign in with your GitHub account.")
     st.markdown("3. Proceed to the API tokens page and copy your API token.")
     st.markdown("Built by Josiah Adesola")
-    st.markdown(":Thank you:Acknowledged the Streamlit Blog ")
+    st.markdown("🙏Acknowledged the Streamlit Blog ")
     
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
