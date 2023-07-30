@@ -68,7 +68,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
             full_response = ''
             # for item in response:
             #     full_response += item
-                full_response += response.choices[0].delta.get("content", "")
+            full_response += response.choices[0].delta.get("content", "")
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
             #    placeholder.markdown(full_response)
