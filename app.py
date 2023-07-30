@@ -22,7 +22,7 @@ with st.sidebar:
     st.markdown("2. Sign in with your GitHub account.")
     st.markdown("3. Proceed to the API tokens page and copy your API token.")
     st.markdown("Built by Josiah Adesola")
-    st.code("(from Streamlit docs)[https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/#1-get-a-replicate-api-token]", language="Markdown")
+    st.markdown(":Thank you:Reference to Streamlit Blog ")
     
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
